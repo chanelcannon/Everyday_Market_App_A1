@@ -1,0 +1,20 @@
+<div class="category-menu">
+  <h2>Category Menu</h2>
+  <div class="selected-category">
+    @if (selectedCategory) {
+    <p>Category Selected: {{ selectedCategory }}</p>
+    }
+  </div>
+  <div class="categories-grid">
+    <ul>
+    @for (category of categories; track category.name) {
+      <li>
+        <app-category-menu-item
+          [categoryName]="category.name"
+          (selected)="onCategorySelected(category.name)">
+        </app-category-menu-item>
+      </li>
+    }
+    </ul> 
+  </div>
+</div>
