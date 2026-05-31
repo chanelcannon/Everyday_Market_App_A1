@@ -17,7 +17,6 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/everyday-market-app-1",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -27,6 +26,7 @@
                 "output": "/public"
               }
             ],
+            "outputPath": "dist/everyday-market-app-1"
             "styles": ["src/styles.css"]
           },
           "configurations": {
