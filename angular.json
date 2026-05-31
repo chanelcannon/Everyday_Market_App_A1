@@ -26,7 +26,6 @@
                 "output": "/public"
               }
             ],
-            "outputPath": "dist/everyday-market-app-1",
             "styles": ["src/styles.css"]
           },
           "configurations": {
